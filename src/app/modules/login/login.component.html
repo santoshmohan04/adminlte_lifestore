@@ -1,6 +1,12 @@
 <div class="card card-outline card-primary">
     <div class="card-header text-center">
-        <a [routerLink]="['/']" class="h1"><b>Admin</b>LTE</a>
+        <a [routerLink]="['/']" class="h1"
+            ><img
+                src="../../../assets/img/onlinestore.png"
+                alt="onlinestore"
+                width="60px"
+            /><b> Online </b>Store</a
+        >
     </div>
     <div class="card-body">
         <p class="login-box-msg">Sign in to start your session</p>
@@ -55,16 +61,6 @@
         </form>
 
         <div class="social-auth-links text-center mb-3">
-            <pf-button
-                class="mb-2"
-                [block]="true"
-                [loading]="isFacebookLoading"
-                [disabled]="isAuthLoading || isGoogleLoading"
-                (click)="loginByFacebook()"
-            >
-                <i class="fab fa-facebook mr-2"></i>
-                Sign in using Facebook
-            </pf-button>
             <pf-button
                 [block]="true"
                 [loading]="isGoogleLoading"
